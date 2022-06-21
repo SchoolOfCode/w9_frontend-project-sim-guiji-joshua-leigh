@@ -2,8 +2,16 @@ import React from 'react';
 import './index.css';
 import {useState, useReducer} from 'react'
 
-const initialState = `HomePage`
+//import components
+import LandingPage from '../LandingPage'
+import HomePage from '../HomePage'
+import Mindfulness from '../Mindfulness'
 
+
+
+//initial state to be used in useReducer
+const initialState = `LandingPage`
+//state changes 
 const reducer = (state, action)=> {
   console.log(action)
   switch(action) {
@@ -19,45 +27,38 @@ const reducer = (state, action)=> {
   }
 }
 
+
 function App() {
   
+  //userReducer 
   const [pageState, dispatch] = useReducer(reducer, initialState);
   
   
-  {
+    //conditional formatting for each component based on state set by useReducer
     if(pageState === `LandingPage`) {
     return (
       <div className="App">
-        <h1>LandingPage</h1>
-        <button onClick={()=> dispatch(`LandingPage`)}>LandingPage</button>
-        <button onClick={()=> dispatch(`HomePage`)}>HomePage</button>
-        <button onClick={()=> dispatch(`Mindfulness`)}>Mindfulness</button>
+        <LandingPage handleClick={dispatch}/>
       </div>
     );
   }
   if(pageState === `HomePage`) {
     return (
       <div className="App">
-        <h1>Homepage</h1>
-        <button onClick={()=> dispatch(`LandingPage`)}>LandingPage</button>
-        <button onClick={()=> dispatch(`HomePage`)}>HomePage</button>
-        <button onClick={()=> dispatch(`Mindfulness`)}>Mindfulness</button>
+        <HomePage handleClick={dispatch}/>
       </div>
     );
   }
   if(pageState === `Mindfulness`) {
     return (
       <div className="App">
-        <h1>Mindfulness</h1>
-        <button onClick={()=> dispatch(`LandingPage`)}>LandingPage</button>
-        <button onClick={()=> dispatch(`HomePage`)}>HomePage</button>
-        <button onClick={()=> dispatch(`Mindfulness`)}>Mindfulness</button>
+        <Mindfulness handleClick={dispatch}/>
       </div>
     );
   }
 
-  } 
+} 
 
-}
+
 
 export default App;
