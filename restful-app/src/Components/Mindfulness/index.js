@@ -1,33 +1,14 @@
-import Button from '../Button'
+import BurgerMenu from "../BurgerMenu"
 
 const Mindfulness = ({handleClick})=> {
 
 
   return (
-    <div>
+    <div className='mindfulness-page'>
       <h1>Mindfulness</h1>
 
-      <Button 
-        className={`LandingPageButton`}
-        text={`LandingPageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`LandingPage`}
-      />
-
-      <Button 
-        className={`HomePageButton`}
-        text={`HomePageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`HomePage`}
-      />
-
-      <Button 
-        className={`MindfulnessButton`}
-        text={`MindfulnessButton`}
-        handleClick={handleClick}
-        handleClickArgument={`Mindfulness`}
-      />
-
+      <BurgerMenu handleClick={handleClick}/>
+      
     </div>
   )
 
