@@ -10,8 +10,8 @@ const LandingPage = ({handleClick})=> {
     <div className='landing-page'>
       <BurgerMenu handleClick={handleClick}/>
       <h1 className='title-landing'>RESTFUL</h1>
-      <Quote className={`feelGoodQuote`} text={`feelGoodQuote`}></Quote>
-      <Quote className={`dailyQuote`} text={`dailyQuote`}></Quote>
+      {/* <Quote className={`feelGoodQuote`} text={`feelGoodQuote`}></Quote>
+      <Quote className={`dailyQuote`} text={`dailyQuote`}></Quote> */}
       <LavaLamp />
 
 
