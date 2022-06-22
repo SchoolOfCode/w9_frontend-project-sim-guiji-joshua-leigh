@@ -1,9 +1,13 @@
 import {slide as Menu} from 'react-burger-menu'
 import Button from '../Button';
+import './styles.css';
+
 
 const BurgerMenu = ({handleClick}) => {
     return (
+      <div className='burger-menu'>
         <button>
+        
         <Menu>
        
       <Button 
@@ -22,8 +26,8 @@ const BurgerMenu = ({handleClick}) => {
           
         </Menu>
         </button>
+        </div>
       );
 }
 
 export default BurgerMenu
-//
