@@ -6,7 +6,7 @@ import './styles.css';
 const BurgerMenu = ({handleClick}) => {
     return (
       <div className='burger-menu'>
-        <button>
+    
         
         <Menu>
        
@@ -25,7 +25,7 @@ const BurgerMenu = ({handleClick}) => {
       />
           
         </Menu>
-        </button>
+        
         </div>
       );
 }
