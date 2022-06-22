@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One&display=swap');
+:root{ 
+    --primary-colour: #E7E3D4;
+    --secondary-colour: #F19f4d;
+    --text-colour: white;
+    --title-font: font-family: 'Lilita One';
+    --main-font: font-family: 'Passion One', cursive;
+  }
+  html {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 720px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    html {
+        font-size: 24px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    -ms-overflow-style: none; 
+}
+::-webkit-scrollbar {
+  display: none;
+
+}
+.landing-page {
+    position: relative;
+    display: block;
+    height: 100vh;
+    background: #100528;
+    overflow: hidden;
+}
+.title-landing {
+    font-family: 'Lilita One';
+    font-size: 5rem;
+    color: white;
+    z-index: -1;
+    margin-top: 1em;
+    text-shadow: 0px 0px 10px rgb(181, 172, 73);
+
+}
+
+.shape-blob {
+	background:linear-gradient(rgb(60, 165, 92), rgb(181, 172, 73));
+	height: 100px;
+	width: 100px;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 20s ease-in-out infinite both alternate,
+		movement_one 10s ease-in-out infinite both,
+        MoveUpDown 30s linear infinite alternate;
+	opacity: 0.8;
+	position: relative;
+	left: 0%;
+	top: 0%;
+    box-shadow: 0px 0px 3px rgb(218, 248, 183);
+
+    
+}
+
+.shape-blob.one{
+	height: 80px;
+	width: 80px;
+	left: 500px;
+	top: -550px;
+	transform: rotate(-180deg);
+	animation: transform 23s ease-in-out infinite both alternate, 
+    movement_two 20s ease-in-out infinite both,
+    MoveUpDown 60s linear infinite alternate;
+    position: relative;
+}
+
+.shape-blob.two{
+	height: 150px;
+	width: 150px;
+	left: 350px;
+	top: -100px;
+	transform: rotate(-10deg);
+	animation: transform 15s ease-in-out infinite both alternate,
+   movement_two 30s ease-in-out infinite both,
+   MoveUpDown 40s linear infinite alternate;
+   position: relative;
+}
+.shape-blob.three{
+	height: 50px;
+	width: 50px;
+	left: 200px;
+	top: -400px;
+	transform: rotate(20deg);
+	animation: transform 15s ease-in-out infinite both alternate,
+   movement_two 25s ease-in-out infinite both,
+   MoveUpDown 60s linear infinite alternate;
+   position: relative;
+}
+.shape-blob.four{
+	height: 110px;
+	width: 110px;
+	left: 100px;
+	top: -400px;
+	transform: rotate(-30deg);
+	animation: transform 10s ease-in-out infinite both alternate,
+   movement_two 40s ease-in-out infinite both,
+   MoveUpDown 55s linear infinite alternate;
+   position: relative;
+}
+.shape-blob.five{
+	height: 200px;
+	width: 200px;
+	left: 190px;
+	top: -800px;
+	transform: rotate(45deg);
+	animation: transform 10s ease-in-out infinite both alternate,
+   movement_two 10s ease-in-out infinite both,
+   MoveUpDown 40s linear infinite alternate;
+   position: relative;
+} 
+.shape-blob.six{
+	height: 80px;
+	width: 80px;
+	left: -80px;
+	top: -1000px;
+	transform: rotate(10deg);
+	animation: transform 10s ease-in-out infinite both alternate,
+   movement_two 10s ease-in-out infinite both,
+   MoveUpDown 60s linear infinite alternate;
+   position: relative;
+} 
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(60%, 20%) rotate(-200deg) scale(1.2);}
+}
+
+@keyframes MoveUpDown {
+    0%, 100%
+     {
+        transform: translateY(-100px);
+    }
+    50% { 
+        transform: translateY(200px);
+    }
+}
