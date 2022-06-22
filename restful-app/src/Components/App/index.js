@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import {useState, useReducer} from 'react'
+import {useState, useReducer, useEffect} from 'react'
 
 //import components
 import LandingPage from '../LandingPage'
@@ -32,7 +32,12 @@ function App() {
   
   //userReducer 
   const [pageState, dispatch] = useReducer(reducer, initialState);
-  
+  useEffect(()=>{
+    fetch('http://localhost:3001/users')
+    .then(res=>res.json())
+    .then(data=>console.log(data))
+
+  },[])
   
     //conditional formatting for each component based on state set by useReducer
     if(pageState === `LandingPage`) {
