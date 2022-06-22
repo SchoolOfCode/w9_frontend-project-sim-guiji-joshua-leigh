@@ -1,0 +1,8 @@
+span {
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    margin: 5px;
+    display: block;
+    transition: all 0.8s ease-in-out;
+}

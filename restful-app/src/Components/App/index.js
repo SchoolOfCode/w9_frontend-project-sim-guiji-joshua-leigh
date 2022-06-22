@@ -1,13 +1,33 @@
 import React from 'react';
 import './index.css';
-import {useState, useReducer} from 'react'
+import {useState, useReducer, useEffect} from 'react'
 
 //import components
 import LandingPage from '../LandingPage'
 import HomePage from '../HomePage'
 import Mindfulness from '../Mindfulness'
 
+//calling message from API
+/*function CallApi() {
+  const [data, setData] = useState(null);
 
+  useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []); 
+
+  return (
+    <div className="CallApi">
+      <header className="CallApi-header">
+        <p>{!data ? "Loading..." : data}</p>
+      </header>
+    </div>
+  );
+}
+*/
+
+  
 
 //initial state to be used in useReducer
 const initialState = `LandingPage`
@@ -29,22 +49,38 @@ const reducer = (state, action)=> {
 
 
 function App() {
+  //function CallApi() {
+    const [data, setData] = useState(null);
   
+    useEffect(() => {
+      fetch("/api")
+        .then((res) => res.json())
+        .then((data) => setData(data.message));
+    }, []); 
+  
+    return (
+      <div className="CallApi">
+        <header className="CallApi-header">
+          <p>{!data ? "Loading..." : data}</p>
+        </header>
+      </div>
+    );
+  }
   //userReducer 
   const [pageState, dispatch] = useReducer(reducer, initialState);
   
   
     //conditional formatting for each component based on state set by useReducer
     if(pageState === `LandingPage`) {
-    return (
-      <div className="App">
+    return (<div>
         <LandingPage handleClick={dispatch}/>
-      </div>
+    </div>
     );
   }
   if(pageState === `HomePage`) {
     return (
       <div className="App">
+        
         <HomePage handleClick={dispatch}/>
       </div>
     );
@@ -57,7 +93,7 @@ function App() {
     );
   }
 
-} 
+}
 
 
 
