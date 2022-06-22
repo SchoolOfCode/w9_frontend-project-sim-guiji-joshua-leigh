@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One&display=swap');
 
-*,
-*:before,
-*:after{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
+
 .mindfulness-page {
     position: relative;
     display: block;
@@ -19,8 +13,12 @@
     font-weight: lighter;
     font-size: 20px;
     color: #deddd7;
-    text-shadow: 1px 2px 1px #9921E8;
+    text-shadow: 1px 1px 1px #9921E8;
     padding-top: 10px;
+    position: absolute;
+    margin: auto;
+    width: 550px;
+    
 }
 .pulse {
     height: 75px;
