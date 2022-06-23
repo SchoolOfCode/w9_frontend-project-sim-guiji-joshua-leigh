@@ -2,7 +2,7 @@ const Quote = ({text, className})=> {
 
 
   return (
-    <div>
+    <div >
       <p className={className}>{text}</p>
     </div>
   )

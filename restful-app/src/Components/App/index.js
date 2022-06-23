@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import {/*useState,*/ useReducer, useEffect} from 'react'
 
@@ -32,18 +32,20 @@ function App() {
   
   //userReducer 
   const [pageState, dispatch] = useReducer(reducer, initialState);
+  const [quotes, setQuotes] = useState({})
   useEffect(()=>{
     fetch('http://localhost:3001/users')
     .then(res=>res.json())
-    .then(data=>console.log(data))
+    .then(data=>setQuotes(data));
 
   },[])
+
   
     //conditional formatting for each component based on state set by useReducer
     if(pageState === `LandingPage`) {
     return (
       <div className="App">
-        <LandingPage handleClick={dispatch}/>
+        <LandingPage handleClick={dispatch} quotes={quotes}/>
       </div>
     );
   }

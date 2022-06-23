@@ -172,3 +172,11 @@
         transform: translateY(200px);
     }
 }
+
+.feelGoodQuote {
+    font-family: 'Lilita One';
+    font-size: 1rem;
+    color: white;
+    margin-top: 1em;
+    text-shadow: 0px 0px 10px rgb(181, 172, 73);
+}
