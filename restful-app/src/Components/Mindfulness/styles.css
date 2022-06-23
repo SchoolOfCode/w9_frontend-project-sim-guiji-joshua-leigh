@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One&display=swap');
+
+
+.mindfulness-page {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(#5F72BE, #9921E8); 
+}
+.mindfulness-title {
+    font-family: 'Lilita One';
+    font-weight: lighter;
+    font-size: 20px;
+    color: #deddd7;
+    text-shadow: 1px 1px 1px #9921E8;
+    padding-top: 10px;
+
+}
+.pulse {
+    height: 75px;
+    width: 75px;
+    background: linear-gradient( #8a82fb, #407ed7);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+
+}
+.pulse:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #8a82fb;
+    border-radius: 50%;
+    z-index: 2;
+    opacity: 0.7;
+
+}
+/* .pulse:before{
+    animation: pulse 4s ease-in infinite;
+} */
+
+.pulse:after {
+    animation-delay: 4s;
+    animation: pulse 7s ease-out infinite;
+} 
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 7.5px rgba(188, 237, 243, 0.3), 0 0 0 15px rgba(188, 237, 243, 0.3), 0 0 0 22.5px rgba(188, 237, 243, 0.3), 0 0 0 30px rgba(188, 237, 243, 0.3), 0 0 0 37.5px rgba(188, 237, 243, 0.3);
+         }
+         50% {
+        box-shadow: 0 0 0 12.5px rgba(188, 237, 243, 0.3), 0 0 0 25px rgba(188, 237, 243, 0.3), 0 0 0 37.5px rgba(188, 237, 243, 0.3), 0 0 0 50px rgba(188, 237, 243, 0.3), 0 0 0 62.5px rgba(188, 237, 243, 0.3);
+         }
+         100% {
+            box-shadow: 0 0 0 7.5px rgba(188, 237, 243, 0.3), 0 0 0 15px rgba(188, 237, 243, 0.3), 0 0 0 22.5px rgba(188, 237, 243, 0.3), 0 0 0 30px rgba(188, 237, 243, 0.3), 0 0 0 37.5px rgba(188, 237, 243, 0.3);
+             }
+            }
+        

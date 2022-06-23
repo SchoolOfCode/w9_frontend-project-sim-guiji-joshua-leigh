@@ -10,24 +10,24 @@ const BurgerMenu = ({handleClick}) => {
         
         <Menu>
        
-      <Button 
-        className={`HomePageButton`}
-        text={`HomePageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`HomePage`}
-      />
+          <Button 
+            className={`HomePageButton`}
+            text={`HomePageButton`}
+            handleClick={handleClick}
+            handleClickArgument={`HomePage`}
+          />
 
-      <Button 
-        className={`MindfulnessButton`}
-        text={`MindfulnessButton`}
-        handleClick={handleClick}
-        handleClickArgument={`Mindfulness`}
-      />
+          <Button 
+            className={`MindfulnessButton`}
+            text={`MindfulnessButton`}
+            handleClick={handleClick}
+            handleClickArgument={`Mindfulness`}
+          />
           
         </Menu>
         
-        </div>
-      );
-}
+      </div>
+    );
+  }
 
 export default BurgerMenu
