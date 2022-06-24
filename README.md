@@ -1,3 +1,25 @@
+- TEAM MANIFESTO - 
+
+* Always speak mind,
+* This is a place of trust,
+* Ask a million questions,
+* Make sure we all understand,
+* Good planning,
+* Make sure we are always on the same page, 
+ - noone left behind
+* Tell people what you're doing,
+* Always celebrate successes,
+* Agile Methodology,
+ - Stand-ups every morning (20mins, 5mins each)
+ - 10mins retro end of play
+* To resolve differences
+ - Dot voting
+ - Thumbs
+ - Rock, Paper, Scissors (heads up)
+ - everyone gets to share and present ideas
+* Make sure we have energisers
+
+
 # National Bootcamp - Week Nine Project Brief
 
 For your project, you’ll be using what you’ve learned on the course so far to try and improve the lives of your users. In this case, the users will be close to home: bootcampers!
