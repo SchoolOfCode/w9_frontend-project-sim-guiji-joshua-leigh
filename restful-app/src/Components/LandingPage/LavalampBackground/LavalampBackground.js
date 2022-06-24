@@ -4,16 +4,19 @@ import "./styles.css";
 
 const LavaLamp= () => {
     return (
-        <section>
-        <div class="blob-drop"></div>	
-        <div class="shape-blob"></div>
-        <div class="shape-blob one"></div>
-        <div class="shape-blob two"></div>
-        <div class="shape-blob three"></div>
-        <div class="shape-blob four"></div>
-        <div class="shape-blob five"></div>
-        <div class="shape-blob six"></div>
-        </section>
+        <div ClassName="container" >
+            <div className="shape-blob"></div>
+            <div className="shape-blob one"></div>
+            <div className="shape-blob two"></div>
+            <div className="shape-blob three"></div>
+            <div className="shape-blob four"></div>
+            <div className="shape-blob five"></div> 
+            <div className="shape-blob six"></div>
+            <div className="shape-blob seven"></div>
+            <div className="shape-blob eight"></div>
+            <div className="shape-blob nine"></div> 
+            <div className="shape-blob ten"></div> 
+        </div>
     );
 };
 

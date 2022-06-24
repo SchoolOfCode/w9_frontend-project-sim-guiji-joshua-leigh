@@ -12,14 +12,14 @@ const BurgerMenu = ({handleClick}) => {
        
           <Button 
             className={`HomePageButton`}
-            text={`HomePageButton`}
+            text={`Home`}
             handleClick={handleClick}
             handleClickArgument={`HomePage`}
           />
 
           <Button 
             className={`MindfulnessButton`}
-            text={`MindfulnessButton`}
+            text={`Guided Breathing`}
             handleClick={handleClick}
             handleClickArgument={`Mindfulness`}
           />
