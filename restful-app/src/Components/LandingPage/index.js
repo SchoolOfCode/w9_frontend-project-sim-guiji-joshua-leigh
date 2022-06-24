@@ -20,7 +20,7 @@ console.log('landing page', quotes)
       <BurgerMenu handleClick={handleClick}/>
       <h1 className='title-landing'>RESTFUL</h1>
       <Quote className={`feelGoodQuote`} text={quotes.payload ? quotes.payload[0].quote: "Loading"}></Quote>
-      <Quote className={`dailyQuote`} text={`dailyQuote`}></Quote>
+      {/* <Quote className={`dailyQuote`} text={`dailyQuote`}></Quote> */}
       <LavaLamp />
 
 

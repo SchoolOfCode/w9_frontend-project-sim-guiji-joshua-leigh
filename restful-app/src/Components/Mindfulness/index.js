@@ -9,7 +9,7 @@ const Mindfulness = ({handleClick})=> {
     <div className="mindfulness-page">
       <BurgerMenu handleClick={handleClick}/>
 
-      <h1 className="mindfulness-title">Mindfulness</h1>
+      <h1 className="mindfulness-title">Guided Breathing</h1>
 
 
       <div className="pulse">
