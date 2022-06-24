@@ -9,7 +9,9 @@ const HomePage = ({handleClick})=> {
     <div className="home-page" >
       <BurgerMenu handleClick={handleClick}/>
 
-      <h1 className="title-home">HomePage</h1>
+      <h1 className="title-home">
+        
+      </h1>
 
 
       <LavaLamp />
