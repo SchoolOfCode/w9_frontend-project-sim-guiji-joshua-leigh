@@ -13,7 +13,10 @@ const Mindfulness = ({handleClick})=> {
 
 
       <div className="pulse">
-
+      <div className="text">
+        <div className="inhale"><p>Inhale</p></div>
+        {/* <div className="exhale"><p>Exhale</p></div> */}
+      </div>
       </div>
 
     </div>
