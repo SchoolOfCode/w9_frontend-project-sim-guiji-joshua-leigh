@@ -16,7 +16,7 @@ console.log('landing page', quotes)
     quotes.payload ? quotes.payload[0].quote: "Hello  world"
   */
   return (
-    <div className='landing-page'>
+    <div className='landing-page' data-testid="landing-page">
       <BurgerMenu handleClick={handleClick}/>
       <h1 className='title-landing'>RESTFUL</h1>
       <Quote className={`feelGoodQuote`} text={quotes.payload ? quotes.payload[0].quote: "Loading"}></Quote>
