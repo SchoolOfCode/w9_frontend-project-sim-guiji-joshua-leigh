@@ -1,36 +1,23 @@
-import Button from '../Button'
+import React from "react";
+import BurgerMenu from "../BurgerMenu/index.js";
+import LavaLamp from '../LandingPage/LavalampBackground/LavalampBackground';
+import './styles.css';
 
 const HomePage = ({handleClick})=> {
-
-
   return (
-    <div>
-      <h1>HomePage</h1>
-      
-      <Button 
-        className={`LandingPageButton`}
-        text={`LandingPageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`LandingPage`}
-      />
 
-      <Button 
-        className={`HomePageButton`}
-        text={`HomePageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`HomePage`}
-      />
+    <div className="home-page" >
+      <BurgerMenu handleClick={handleClick}/>
 
-      <Button 
-        className={`MindfulnessButton`}
-        text={`MindfulnessButton`}
-        handleClick={handleClick}
-        handleClickArgument={`Mindfulness`}
-      />
+      <h1 className="title-home">
+        
+      </h1>
+
+
+      <LavaLamp />
       
     </div>
   )
-
 }
 
 export default HomePage

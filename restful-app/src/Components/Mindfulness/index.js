@@ -1,36 +1,26 @@
-import Button from '../Button'
+import React from "react";
+import BurgerMenu from "../BurgerMenu/index.js"
+import "./styles.css";
+
 
 const Mindfulness = ({handleClick})=> {
-
-
   return (
-    <div>
-      <h1>Mindfulness</h1>
 
-      <Button 
-        className={`LandingPageButton`}
-        text={`LandingPageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`LandingPage`}
-      />
+    <div className="mindfulness-page">
+      <BurgerMenu handleClick={handleClick}/>
 
-      <Button 
-        className={`HomePageButton`}
-        text={`HomePageButton`}
-        handleClick={handleClick}
-        handleClickArgument={`HomePage`}
-      />
+      <h1 className="mindfulness-title">Guided Breathing</h1>
 
-      <Button 
-        className={`MindfulnessButton`}
-        text={`MindfulnessButton`}
-        handleClick={handleClick}
-        handleClickArgument={`Mindfulness`}
-      />
+
+      <div className="pulse">
+      <div className="text">
+        <div className="inhale"><p>Inhale</p></div>
+        {/* <div className="exhale"><p>Exhale</p></div> */}
+      </div>
+      </div>
 
     </div>
   )
-
 }
 
 export default Mindfulness
